@@ -13,6 +13,8 @@
 @property (copy) NSString *firstName;
 @property (copy) NSString *lastName;
 
+- (id)initWithName:(NSString *)firstName lastName:(NSString *)lastName;
+
 - (NSString *)fullName;
 - (void)saySomething:(NSString *)something;
 - (void)sayHello:(NSString *)greet;

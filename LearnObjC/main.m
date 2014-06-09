@@ -10,41 +10,67 @@
 #import "XYZPerson.h"
 #import "XYZShoutingPerson.h"
 
-void createPersonTest();
-void copyMutableStringTest();
+void testCreatePerson();
+void testCopyMutableString();
+void testStrongWeakVar();
 
 int main(int argc, const char * argv[])
 {
     @autoreleasepool {
-        createPersonTest();
-        copyMutableStringTest();
+        testCreatePerson();
+        testCopyMutableString();
+        testStrongWeakVar();
     }
     return 0;
 }
 
-void createPersonTest()
+void testCreatePerson()
 {
-    XYZPerson* person = [XYZShoutingPerson person];
+    XYZPerson *person = [XYZShoutingPerson person];
     [person sayHello:@"Halo"];
     
-    XYZPerson* test;
+    XYZPerson *test;
     if(!test) {
         NSLog(@"Test nil");
         [test firstName];
     }
     
-    XYZPerson* anotherPerson = [XYZPerson person];
+    XYZPerson *anotherPerson = [XYZPerson person];
     [anotherPerson sayHello:@"Arigatou"];
 }
 
-void copyMutableStringTest()
+void testCopyMutableString()
 {
     /*
     Test what happens if you set a mutable string as the person’s first name, then mutate that string before calling your modified sayHello method. Change the NSString property declarations by adding the copy attribute and test again.
     */
-    NSMutableString* mutableFirstName = [NSMutableString stringWithString:@"MutableFirstName"];
-    XYZPerson* person = [XYZPerson person:mutableFirstName lastName:@"LastName"];
+    NSMutableString *mutableFirstName = [NSMutableString stringWithString:@"MutableFirstName"];
+    XYZPerson *person = [XYZPerson person:mutableFirstName lastName:@"LastName"];
     [mutableFirstName appendString:@"Test"];
     [person sayHello:@"Haloo"];
+}
+
+void testStrongWeakVar()
+{
+    XYZPerson *__weak weakPerson = [[XYZPerson alloc] init];
+    if (!weakPerson) {
+        NSLog(@"weakPerson already deallocated");
+    }
+    
+    XYZPerson *person = [[XYZPerson alloc] init];
+    if (person) {
+        NSLog(@"person still exist");
+    }
+
+    weakPerson = person;
+    if (weakPerson) {
+        NSLog(@"weakPerson still exist");
+    }
+    
+    person = nil;
+    if (!weakPerson) {
+        NSLog(@"weakPerson already deallocated");
+    }
+
 }
 
