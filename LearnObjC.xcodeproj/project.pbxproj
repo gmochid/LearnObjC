@@ -10,6 +10,8 @@
 		1E37640419416C670080690F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E37640319416C670080690F /* Foundation.framework */; };
 		1E37640719416C670080690F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E37640619416C670080690F /* main.m */; };
 		1E37640B19416C670080690F /* LearnObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E37640A19416C670080690F /* LearnObjC.1 */; };
+		1E3764161943D0E00080690F /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3764151943D0E00080690F /* XYZPerson.m */; };
+		1E3764191943D6730080690F /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3764181943D6730080690F /* XYZShoutingPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		1E37640619416C670080690F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E37640919416C670080690F /* LearnObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnObjC-Prefix.pch"; sourceTree = "<group>"; };
 		1E37640A19416C670080690F /* LearnObjC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LearnObjC.1; sourceTree = "<group>"; };
+		1E3764141943D0E00080690F /* XYZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZPerson.h; path = ../XYZPerson.h; sourceTree = "<group>"; };
+		1E3764151943D0E00080690F /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZPerson.m; path = ../XYZPerson.m; sourceTree = "<group>"; };
+		1E3764171943D6730080690F /* XYZShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZShoutingPerson.h; sourceTree = "<group>"; };
+		1E3764181943D6730080690F /* XYZShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZShoutingPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 		1E37640519416C670080690F /* LearnObjC */ = {
 			isa = PBXGroup;
 			children = (
+				1E3764141943D0E00080690F /* XYZPerson.h */,
+				1E3764151943D0E00080690F /* XYZPerson.m */,
+				1E3764171943D6730080690F /* XYZShoutingPerson.h */,
+				1E3764181943D6730080690F /* XYZShoutingPerson.m */,
 				1E37640619416C670080690F /* main.m */,
 				1E37640A19416C670080690F /* LearnObjC.1 */,
 				1E37640819416C670080690F /* Supporting Files */,
@@ -139,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3764161943D0E00080690F /* XYZPerson.m in Sources */,
+				1E3764191943D6730080690F /* XYZShoutingPerson.m in Sources */,
 				1E37640719416C670080690F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
