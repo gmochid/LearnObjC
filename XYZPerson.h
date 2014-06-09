@@ -10,8 +10,8 @@
 
 @interface XYZPerson : NSObject
 
-@property NSString *firstName;
-@property NSString *lastName;
+@property (copy) NSString *firstName;
+@property (copy) NSString *lastName;
 
 - (NSString *)fullName;
 - (void)saySomething:(NSString *)something;
