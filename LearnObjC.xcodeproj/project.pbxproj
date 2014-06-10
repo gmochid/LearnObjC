@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E29F1E719474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E29F1E619474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.m */; };
 		1E37640419416C670080690F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E37640319416C670080690F /* Foundation.framework */; };
 		1E37640719416C670080690F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E37640619416C670080690F /* main.m */; };
 		1E37640B19416C670080690F /* LearnObjC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1E37640A19416C670080690F /* LearnObjC.1 */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E29F1E519474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XYZPerson+XYZPersonNameDisplayAdditions.h"; sourceTree = "<group>"; };
+		1E29F1E619474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XYZPerson+XYZPersonNameDisplayAdditions.m"; sourceTree = "<group>"; };
 		1E37640019416C670080690F /* LearnObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E37640319416C670080690F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1E37640619416C670080690F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				1E37640619416C670080690F /* main.m */,
 				1E37640A19416C670080690F /* LearnObjC.1 */,
 				1E37640819416C670080690F /* Supporting Files */,
+				1E29F1E519474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.h */,
+				1E29F1E619474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.m */,
 			);
 			path = LearnObjC;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E3764161943D0E00080690F /* XYZPerson.m in Sources */,
+				1E29F1E719474D6600012415 /* XYZPerson+XYZPersonNameDisplayAdditions.m in Sources */,
 				1E3764191943D6730080690F /* XYZShoutingPerson.m in Sources */,
 				1E37640719416C670080690F /* main.m in Sources */,
 			);
@@ -265,6 +271,7 @@
 				1E37641019416C670080690F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

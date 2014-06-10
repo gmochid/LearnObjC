@@ -12,14 +12,17 @@
 
 @property (copy) NSString *firstName;
 @property (copy) NSString *lastName;
+@property (copy) NSDate *dateOfBirth;
 
 - (id)initWithName:(NSString *)firstName lastName:(NSString *)lastName;
 
 - (NSString *)fullName;
 - (void)saySomething:(NSString *)something;
 - (void)sayHello:(NSString *)greet;
+- (void)sayIntroduction;
 
 + (XYZPerson *)person;
 + (XYZPerson *)person:(NSString *)firstName lastName:(NSString *)lastName;
++ (XYZPerson *)person:(NSString *)firstName lastName:(NSString *)lastName dateOfBirth:(NSDate *)dateOfBirth;
 
 @end

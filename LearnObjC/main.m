@@ -37,6 +37,9 @@ void testCreatePerson()
     
     XYZPerson *anotherPerson = [XYZPerson person];
     [anotherPerson sayHello:@"Arigatou"];
+    
+    XYZPerson *datePerson = [XYZPerson person:@"Jim" lastName:@"Raynor" dateOfBirth:[NSDate date]];
+    [datePerson sayIntroduction];
 }
 
 void testCopyMutableString()
